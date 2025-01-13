@@ -1,0 +1,19 @@
+echo "Choose 1 for multiplication and 2 for addition :- "
+
+read -p "Enter choice :- " n
+read -p "Enter first number :- " m
+read -p "Enter second number :- " o
+
+
+case $n in
+1)
+let a=m*o
+echo $a
+;;
+2)
+let a=m+o
+echo $a
+;;
+*)
+echo "Invalid Choice"
+esac
